@@ -4,5 +4,6 @@
 #include "../../config.h"
 
 #define BACKLIGHT_LEVELS 5
+#define BACKLIGHT_PIN B7
 
 #endif
