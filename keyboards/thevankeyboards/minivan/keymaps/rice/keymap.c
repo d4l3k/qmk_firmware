@@ -21,20 +21,7 @@ extern keymap_config_t keymap_config;
     { K30,   K31,   K32,   K33,  K34,   KC_NO, KC_NO, K37,   K38,   K39,   K3A,   K3B }  \
 }
 
-#include "layout.c"
+#define LED_TOG BL_STEP
+#define LED_CHG BL_BRTG
 
-//LED keymap functions
-#ifdef LED_ENABLE
-bool process_record_user(uint16_t keycode, keyrecord_t *record) {
-  if (record->event.pressed) {
-    switch(keycode) {
-      case LED_TOG:
-        backlight_step();
-        return false;
-      case LED_CHG:
-        return false;
-    }
-  }
-  return true;
-};
-#endif
+#include "layout.c"

@@ -18,6 +18,11 @@
   #include "protocol/serial.h"
 #endif
 
+enum custom_keycodes {
+    LED_TOG = SAFE_RANGE,
+    LED_CHG
+};
+
 #include "../../../tv44/keymaps/rice/layout.c"
 
 //LED keymap functions
