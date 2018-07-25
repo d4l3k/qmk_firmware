@@ -21,4 +21,8 @@
 
 // place overrides here
 
+#define RGBLIGHT_ANIMATIONS
+#define RGB_DI_PIN D5     // The pin the LED strip is connected to
+#define RGBLED_NUM 14     // Number of LEDs in your strip
+
 #endif
