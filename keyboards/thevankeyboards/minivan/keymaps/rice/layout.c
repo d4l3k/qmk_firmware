@@ -4,8 +4,8 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 LAYOUT(
   KC_TAB,        KC_Q,    KC_W,    KC_E,    KC_R,    KC_T,    KC_Y,    KC_U,    KC_I,    KC_O,    KC_P,    KC_BSPC,
   LT(1, KC_ESC), KC_A,    KC_S,    KC_D,    KC_F,    KC_G,    KC_H,    KC_J,    KC_K,    KC_L,    KC_SCLN, LT(1, KC_QUOT),
-  KC_LSFT,       KC_Z,    KC_X,    KC_C,    KC_V,    KC_B,    KC_N,    KC_M,    KC_COMM, KC_DOT,  KC_SLSH, MO(2),
-  KC_LCTL,       MO(2),   KC_LALT, KC_LGUI, KC_ENT,      KC_SPC,       KC_SPC,  KC_RALT, KC_RSFT, KC_RCTL, TT(3)
+  KC_LSFT,       KC_Z,    KC_X,    KC_C,    KC_V,    KC_B,    KC_N,    KC_M,    KC_COMM, KC_DOT,  KC_SLSH, KC_RSFT,
+  KC_LCTL,       MO(2),   KC_LALT, KC_LGUI, KC_ENT,      KC_SPC,       KC_SPC,  KC_RALT, KC_RALT, KC_RCTL, TT(3)
 ),
 
   /* FN Layer 1
@@ -22,7 +22,7 @@ LAYOUT(
 
 LAYOUT(
   KC_TILDE, KC_EXCLAIM, KC_AT,   KC_HASH, KC_DOLLAR, KC_PERCENT, KC_CIRCUMFLEX, KC_AMPERSAND,  KC_ASTERISK, KC_LEFT_PAREN, KC_RIGHT_PAREN, KC_DELETE,
-  _______,   KC_BSLS,    _______, KC_MINS, KC_EQL,    _______,    KC_LEFT,      KC_DOWN, KC_UP, KC_RIGHT, KC_COLN, KC_DQUO,
+  _______,   KC_BSLS,   KC_QUOT, KC_MINS, KC_EQL,    _______,    KC_LEFT,      KC_DOWN, KC_UP, KC_RIGHT, KC_COLN, KC_DQUO,
   _______,  _______,    _______, KC_LBRC, KC_RBRC,   _______,    KC_LEFT_CURLY_BRACE, KC_RIGHT_CURLY_BRACE,   KC_LABK,   KC_RABK,   KC_QUES,  _______,
   _______,  _______,    _______, KC_CAPS, _______,          _______,            _______, _______, _______, _______, _______
 ),
@@ -41,8 +41,8 @@ LAYOUT(
 
 LAYOUT(
   KC_GRV,  KC_1,    KC_2,    KC_3,    KC_4,    KC_5,    KC_6,    KC_7,    KC_8,    KC_9,    KC_0,    _______,
-  _______, KC_PIPE, _______, KC_UNDERSCORE, KC_PLUS, _______, KC_HOME, KC_PGDN, KC_PGUP, KC_END, _______, _______,
-  _______, KC_MUTE,  KC_VOLD,  KC_VOLU,  _______,  _______,  _______,  _______, _______, _______,  _______,  _______,
+  _______, KC_PIPE, KC_DQUO, KC_UNDERSCORE, KC_PLUS, _______, KC_HOME, KC_PGDN, KC_PGUP, KC_END, _______, _______,
+  _______, KC_MUTE, KC_VOLD, KC_VOLU,  _______,  _______,  _______,  _______, _______, _______,  _______,  _______,
   _______, _______, _______, _______, _______,     _______,      _______, _______, _______, _______, _______
 ),
 
